@@ -7,6 +7,7 @@ import com.rpl.rama.test.*;
 
 import java.util.concurrent.*;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class EachAsyncModule implements RamaModule {
   @Override
   public void define(Setup setup, Topologies topologies) {

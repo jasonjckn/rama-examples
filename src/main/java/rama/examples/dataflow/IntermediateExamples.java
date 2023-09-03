@@ -8,6 +8,7 @@ import com.rpl.rama.ops.*;
 
 import java.util.*;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class IntermediateExamples {
   public static void explodeExample() {
     List data = Arrays.asList(1, 2, 3, 4);

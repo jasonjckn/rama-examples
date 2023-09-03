@@ -3,6 +3,7 @@ package rama.examples.paths;
 import java.util.Map;
 import com.rpl.rama.Navigator;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class CustomKey implements Navigator<Map> {
   private final Object _k;
 

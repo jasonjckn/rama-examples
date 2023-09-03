@@ -5,6 +5,7 @@ import com.rpl.rama.*;
 import com.rpl.rama.ops.Ops;
 import com.rpl.rama.ops.RamaFunction1;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class PathExamples {
   public static Map genData() {
     Map data = new HashMap() {{

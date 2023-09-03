@@ -5,6 +5,7 @@ import com.rpl.rama.module.*;
 import com.rpl.rama.test.*;
 import java.util.*;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class SubListModule implements RamaModule {
   @Override
   public void define(Setup setup, Topologies topologies) {

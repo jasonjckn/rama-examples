@@ -3,6 +3,7 @@ package rama.examples.pstates;
 import com.rpl.rama.diffs.*;
 import java.util.*;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class DiffProcessing {
   public static class MyProcessor implements Diff.Processor, KeyDiff.Processor {
     public List processedKeys = new ArrayList();

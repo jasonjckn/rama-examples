@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class MockOutputCollectorExample {
   public static class MyOperation implements RamaOperation1<Integer> {
     @Override

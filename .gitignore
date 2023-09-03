@@ -1,1 +1,10 @@
 target/
+.classpath
+.clj-kondo/
+.cpcache/
+.factorypath
+.idea/
+.lsp/
+.nrepl-port
+.project
+.settings/

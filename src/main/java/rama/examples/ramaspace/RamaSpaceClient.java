@@ -7,6 +7,7 @@ import com.rpl.rama.ops.Ops;
 
 import java.util.*;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class RamaSpaceClient {
   private Depot _userRegistrationsDepot;
   private Depot _profileEditsDepot;
