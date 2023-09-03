@@ -14,13 +14,13 @@ public class HelloWorldModule implements RamaModule {
                 .each(Ops.PRINTLN, "*data");
     }
 
-    public static void main(String[] args) throws Exception {
+    public void main(String[] args) throws Exception {
         try (InProcessCluster cluster = InProcessCluster.create()) {
             cluster.launchModule(new HelloWorldModule(), new LaunchConfig(1, 1));
 
             String moduleName = HelloWorldModule.class.getName();
             Depot depot = cluster.clusterDepot(moduleName, "*depot");
-            depot.append("Hello, world!!..........");
+            depot.append("Hello world!");
 
         }
     }

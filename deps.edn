@@ -1,0 +1,11 @@
+{:mvn/repos {"nexus-releases" {:url "https://nexus.redplanetlabs.com/repository/maven-public-releases"}}
+ :paths     ["src/main/java", "src/main/clj"]
+ :deps      {org.clojure/clojure                    {:mvn/version "1.11.1" :mvn/scope "provided"}
+             ;;
+             com.rpl/rama                           {:mvn/version "0.9.2"}
+             com.rpl/rama-helpers                   {:mvn/version "0.9.0"}
+             ;;
+             org.junit.jupiter/junit-jupiter-engine {:mvn/version "RELEASE"}
+             org.junit.vintage/junit-vintage-engine {:mvn/version "RELEASE"}
+             ;;
+             com.clojure-goes-fast/virgil           {:mvn/version "0.2.0"}}}
