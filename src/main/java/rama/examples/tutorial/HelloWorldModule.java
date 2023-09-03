@@ -20,7 +20,8 @@ public class HelloWorldModule implements RamaModule {
 
             String moduleName = HelloWorldModule.class.getName();
             Depot depot = cluster.clusterDepot(moduleName, "*depot");
-            depot.append("Hello, world!!");
+            depot.append("Hello, world!!..........");
+
         }
     }
 }
