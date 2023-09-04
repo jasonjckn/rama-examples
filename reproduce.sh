@@ -3,4 +3,6 @@
 mvn compile
 mvn package
 mvn dependency:build-classpath -Dmdep.outputFile=cp.txt
-java -cp "$(cat ./cp.txt):target/rama-examples.jar" rama.examples.wordcount.WordCountModule
+CLASSPATH="$(cat ./cp.txt)"
+rm cp.txt
+java -cp "$CLASSPATH:target/rama-examples.jar" rama.examples.wordcount.WordCountModule
