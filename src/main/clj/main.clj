@@ -13,9 +13,10 @@
         (eval '(
                 ;; rama.examples.tutorial.HelloWorldModule.
                 ;; rama.examples.wordcount.WordCountModule.
-                ;; rama.examples.tutorial.Test1.
+                rama.examples.tutorial.Test1.
                 ;; rama.examples.tutorial.Test2.
-                rama.examples.tutorial.Test3.
+                ;; rama.examples.tutorial.Test3.
+                ;; rama.examples.tutorial.Test4.
                 ;; rama.examples.tutorial.PageAnalyticsModule.
                 ))
         ]
@@ -25,9 +26,8 @@
 (defn -main [& _]
   (virgil/watch-and-recompile ["src/main/java"] :verbose false :post-hook #'my-hook))
 
+
 #_ (virgil/watch-and-recompile ["src/main/java"] :verbose false :post-hook #'my-hook)
-
-
 ;; (r/reflect
 ;;   rpl.rama.util.helpers/atomic-println)
 

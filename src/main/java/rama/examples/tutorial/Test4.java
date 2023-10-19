@@ -1,9 +1,6 @@
 package rama.examples.tutorial;
 
-import com.rpl.rama.Block;
-import com.rpl.rama.Expr;
-import com.rpl.rama.LoopVars;
-import com.rpl.rama.RamaModule;
+import com.rpl.rama.*;
 import com.rpl.rama.ops.Ops;
 
 import java.util.Arrays;
@@ -16,7 +13,7 @@ public class Test4 implements RamaModule {
 
     }
 
-    public static void main (String[] args) {
+    public void main () {
 //        Block.loopWithVars(LoopVars.var("*i", 0),
 //                        Block.ifTrue(new Expr(Ops.NOT_EQUAL, "*i", 5),
 //                                Block.emitLoop("*i")
@@ -34,5 +31,17 @@ public class Test4 implements RamaModule {
                 put("c1", Arrays.asList("x", "y"));
             }});
         }};
+
+//        Block.select(data, Path.key("a0").key("a1").nth(1)).out("*v")
+//                .each(Ops.PRINTLN, "Val:", "*v")
+//                .execute();
+
+//        Block.select(data, Path.key("a0").mapVals().all()).out("*v")
+//                .each(Ops.PRINTLN, "Val:", "*v")
+//                .execute();
+        Block.select(data, Path.mapVals().mapVals().all()).out("*v")
+                .each(Ops.PRINTLN, "Val:", "*v")
+                .execute();
+
     }
 }

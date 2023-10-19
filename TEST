@@ -1,0 +1,7 @@
+  // Select this Java snippet, then press “C-x C-j” to evaluate it
+  import javax.swing.*;
+  JOptionPane.showMessageDialog(new JFrame(){{setAlwaysOnTop(true);}}, "Super nice!")
+ IntStream.range(0, 23).forEach(x -> System.out.println(x))
+
+
+System.out.println("hi")
